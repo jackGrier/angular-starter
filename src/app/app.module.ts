@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { Ng2Carousel3dModule } from 'ng2-carousel-3d';
 
 import { AppComponent } from './app.component';
 import { BodyComponent} from './body/body.component';
@@ -12,7 +12,7 @@ import { BodyComponent} from './body/body.component';
   ],
   imports: [
     BrowserModule,
-    CarouselModule.forRoot()
+    Ng2Carousel3dModule
   ],
   providers: [],
   bootstrap: [AppComponent]

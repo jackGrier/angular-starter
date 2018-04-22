@@ -1,53 +1,84 @@
-<carousel>
-  <slide>
-    <div class="card mb-4 box-shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal"></h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title"> <small class="text-muted"></small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-      </div>
-    </div>
-  </slide>
-  <slide>
-    <div class="card mb-4 box-shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal"></h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title"> <small class="text-muted"></small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">About Me</h1>
+  <p class="lead">My name is Jack Grier. I am a full stack Software Developer from Ireland, my day to day entails the
+    development of Angular and Java web applications in the financial industry.</p>
+</div>
+
+<div class="container">
+  <ng2-carousel-3d [slides]="slides" [options]="options" class="col-12" #carousel>
+    <ng2-carousel-3d-slide (click)="slideClicked('Github')">
+    <div class="card-deck mb-1 text-center">
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Github</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>See my projects on Github</li>
+            <div class="github-card"
+                 data-github="JackGrier"
+                 data-width="400"
+                 data-height=""
+                 data-theme="default"></div>
+            <script src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js"></script>
+          </ul>
+        </div>
       </div>
     </div>
-  </slide>
-  <slide>
-    <div class="card mb-4 box-shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal"></h4>
+    </ng2-carousel-3d-slide>
+    <ng2-carousel-3d-slide (click)="slideClicked('LinkedIn')">
+      <div class="card-deck mb-1 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">LinkedIn</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Full stack engineer</li>
+              <li>Experience with:</li>
+              <li>Angular</li>
+              <li>Angular Js</li>
+              <li>Java</li>
+              <li>Spring</li>
+              <li>Hibernate</li>
+              <li>For more <a href="https://www.linkedin.com/in/jack-grier-223a1a57/">Check out my profile</a></li>
+              <li><img src="../../assets/CFA_badge.png" alt="CFA Certification Badge"></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title"> <small class="text-muted"></small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+    </ng2-carousel-3d-slide>
+    <ng2-carousel-3d-slide (click)="slideClicked('Twitter')">
+      <div class="card-deck mb-1 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Twitter</h4>
+          </div>
+          <div class="card-body">
+            <a href="https://twitter.com/jgrier93?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+               data-show-count="false">Follow @jgrier93</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </slide>
-</carousel>
+    </ng2-carousel-3d-slide>
+  </ng2-carousel-3d>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../../../assets/js/vendor/popper.min.js"></script>
+<script src="../../../../dist/js/bootstrap.min.js"></script>
+<script src="../../../../assets/js/vendor/holder.min.js"></script>
+<script>
+  Holder.addTheme('thumb', {
+    bg: '#55595c',
+    fg: '#eceeef',
+    text: 'Thumbnail'
+  });
+</script>
