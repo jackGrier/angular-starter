@@ -12,17 +12,9 @@ export class BodyComponent {
       name: 'gitHub',
       title: 'GitHub',
       content: '        <div class="card-header">\n' +
-      '          <h4 class="my-0 font-weight-normal">Github</h4>\n' +
-      '        </div>\n' +
       '        <div class="card-body">\n' +
       '          <ul class="list-unstyled mt-3 mb-4">\n' +
-      '            <li>See my projects on Github</li>\n' +
-      '            <div class="github-card"\n' +
-      '                 data-github="JackGrier"\n' +
-      '                 data-width="400"\n' +
-      '                 data-height=""\n' +
-      '                 data-theme="default"></div>\n' +
-      '            <script src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js"></script>\n' +
+      '            <li>See my projects on <a href="https://github.com/jackGrier">Github</a></li>\n' +
       '          </ul>\n' +
       '        </div>',
       class: 'jumbotron p-3 p-md-5 text-white rounded bg-dark'
@@ -57,7 +49,7 @@ export class BodyComponent {
       '<a href="https://twitter.com/jgrier93?ref_src=twsrc%5Etfw" class="twitter-follow-button"\n' +
       'data-show-count="false">Follow @jgrier93</a>\n' +
       '<img class="card-img-right"' +
-      'alt="Twitter Icon" style="width: 10px; height: 10px; max-width: 30px; max-height: 30px;" src="../../assets/Twitter-Logo.png"/>' +
+      ' alt="Twitter Icon" style="width: 10px; height: 10px;" src="../../assets/Twitter_Logo_Blue.png"/>' +
       '</div>',
       class: 'jumbotron p-3 p-md-5 text-white rounded bg-dark'
     }

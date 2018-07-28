@@ -1,3 +1,8 @@
+<nav class="site-header sticky-top py-1 navbar-light bg-light">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a *ngFor="let panel of panels" class="py-2 d-none d-md-inline-block" href="#{{panel.name}}">{{panel.title}}</a>
+  </div>
+</nav>
 <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">About Me</h1>
   <p class="lead">My name is Jack Grier. I am a full stack Software Developer from Ireland, my day to day entails the
